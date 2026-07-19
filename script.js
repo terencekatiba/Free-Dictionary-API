@@ -64,3 +64,8 @@ return response.json();
 result.innerHTML=
 `<h2>${error.message}</h2>`;
 });
+
+if(word===""){
+result.innerHTML="Please enter a word.";
+return;
+}
