@@ -38,3 +38,10 @@ const audio=data[0],phonetics[0].audio;
 <audio controls>
 <source src="${audio}">
 </audio>
+
+const synonyms=data[0].meanings[0].synonyms;
+result.innerHTML+=`
+<p>
+${synonyms.join(", ")}
+</p>
+`;
