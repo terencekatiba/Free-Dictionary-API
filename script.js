@@ -69,3 +69,5 @@ if(word===""){
 result.innerHTML="Please enter a word.";
 return;
 }
+
+result.style.backgroundColor="#e8f5e9";
