@@ -45,3 +45,7 @@ result.innerHTML+=`
 ${synonyms.join(", ")}
 </p>
 `;
+
+if(synonyms.length===0){
+result.innerHTML+="<p>No synonyms found.</p>";
+}
