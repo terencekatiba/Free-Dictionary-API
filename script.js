@@ -49,3 +49,18 @@ ${synonyms.join(", ")}
 if(synonyms.length===0){
 result.innerHTML+="<p>No synonyms found.</p>";
 }
+const example=
+data[0].meanings[0].definitions[0].example ||
+"No example available.";
+
+fetch(url)
+.then(response=>{
+if(!response.ok){
+throw Error("Word not found");
+}
+return response.json();
+})
+.catch(error=>{
+result.innerHTML=
+`<h2>${error.message}</h2>`;
+});
