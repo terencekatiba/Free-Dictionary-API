@@ -32,3 +32,9 @@ result.innerHTML=`
 <p><strong>Part of Speech:</strong> ${speech}</p>
 <p>${meaning}</p>
 `;
+
+audio
+const audio=data[0],phonetics[0].audio;
+<audio controls>
+<source src="${audio}">
+</audio>
