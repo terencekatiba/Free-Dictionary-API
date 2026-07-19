@@ -21,3 +21,14 @@ console.log(data);
 }
 
 searchWord(word);
+
+const wordName=data[0].word;
+const pronunciation=data[0].phonetics[0].text;
+const meaning=data[0].meanings[0].definitions[0].definition;
+const speech=data[0].meanings[0].partOfSpeech;
+result.innerHTML=`
+<h2>${wordName}</h2>
+<p><strong>Pronunciation:</strong> ${pronunciation}</p>
+<p><strong>Part of Speech:</strong> ${speech}</p>
+<p>${meaning}</p>
+`;
